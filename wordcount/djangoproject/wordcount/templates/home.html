@@ -1,0 +1,51 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+    {% block stylesheet %}
+    {% endblock stylesheet %}
+</head>
+
+<body>
+
+
+
+
+<div class = "contents" id="app-1">
+<h1> 안녕하세요, 여기서 글자를 세세요! </h1>
+
+<a href="{% url 'about' %}" class="btn">ABOUT</a>
+
+<form action="{% url 'result' %}">
+    <textarea class="inputTag" id="inputTagId" v-model="sentence" cols="100" rows="15" name = "fulltext" > </textarea>
+    <br>
+
+    <input type="submit" value ="Count!" >
+</form>
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div class="footerEle">
+            <h4>About Production</h4>
+            <p>Copyright &copy; 2019 Likelion has All Right Reserved. </p>
+        </div>
+
+        <div class="footerEle">
+            <center><h4 class = "center"> 만든사람 </h4></center>
+            <p>멋사 7기</p>
+            <center><p>박도현</p></center>
+        </div>
+        
+        <div class="footerEle">
+            <img id="likelion" src="https://likelion.net/assets/logo/likelion-white-a930fbcdf3042a50ba882ece9c02f43536971297a8e143e212d9b92d653bfa44.png">
+        </div>
+    </footer>
+</body>
+</html>

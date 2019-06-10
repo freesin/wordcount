@@ -1,0 +1,46 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'about.css' %}">
+    {% block stylesheet %}
+    {% endblock stylesheet %}
+</head>
+
+<body>
+    <header>
+        <h1>About Page</h1>
+
+    </header>
+
+    <section>
+    <h1>About</h1>
+
+    <p>안녕하세요? </p> 
+    <p>이곳은 글자를 세 주는 멋쟁이 사자처럼의 워드카운트 페이지 입니다. </p>
+    <p>여기서 글자를 세세요.</p>
+
+    <a href="{% url "home" %}" class="btn"> Home으로 돌아가기</a>
+    
+    </section>
+    
+
+
+    
+    <footer>
+        <div class="footerEle">
+            <h4>About Production</h4>
+            <p>Copyright &copy; 2019 Likelion has All Right Reserved. </p>
+        </div>
+
+        <div class="footerEle">
+            <center><h4 class = "center"> 만든사람 </h4></center>
+            <p>멋사 7기</p>
+            <center><p>박도현</p></center>
+        </div>
+        
+        <div class="footerEle">
+            <img id="likelion" src="https://likelion.net/assets/logo/likelion-white-a930fbcdf3042a50ba882ece9c02f43536971297a8e143e212d9b92d653bfa44.png">
+        </div>
+    </footer>
+</body>
+</html>
